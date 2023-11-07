@@ -16,7 +16,7 @@
 <body>
     <div id="app">
         <div class="container-fluid bg-primary vh-100">
-            <ul class="p-5 fs-1">
+            <ul class="p-5 fs-1" v-if="emails.length >= 10">
                 <li v-for="mail in emails">{{mail}}</li>
             </ul>
         </div>
